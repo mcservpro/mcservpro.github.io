@@ -13,6 +13,9 @@ h1, h2, h3, p {
     cursor: default;
 }
 
+img {
+    width: 3.2%;
+}
 
 .main {
     display: flex;
@@ -52,9 +55,59 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    border: 10px solid #333;
 }
 
+footer nav a {
+    display: inline-block;
+    font-size: 2em;
+}
+
+footer p {
+    margin-top: 3.25em;
+    font-size: 0.8em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img{
+    padding-right: 0.9%;
+}
+
+.dark-theme {
+    background-color: rgb(53, 53, 53);
+}
+
+.dark-theme header h1 {
+    color: white;
+}
+
+.dark-theme .box {
+    background-color: #0000006f;
+    color: #fff;
+}
+
+.dark-theme .box:hover {
+    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-theme #theme {
+    background-color: #333;
+    border: 1px solid gray;
+    color: white;
+}
+
+#theme {
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 1% 2%;
+    font-size: 1em;
+}
 
 
 nav a {
