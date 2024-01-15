@@ -32,6 +32,10 @@ img {
     transition: .6s all;
 }
 
+.boxx{
+  padding: 20px;
+}
+
 .box:hover {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
@@ -91,6 +95,11 @@ header img{
     color: #fff;
 }
 
+.dark-theme .mdl-button{
+    background-color: #0000006f;
+    color: #fff;
+}
+
 .dark-theme .box:hover {
     box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.1);
 }
@@ -136,3 +145,13 @@ nav a {
 .title:hover::before {
     width: 100%;
 }
+
+  .buttons-container {
+    display: flex;
+    
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-right: 10px; /* Добавляем горизонтальный отступ справа */
+  }
