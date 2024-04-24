@@ -32,7 +32,7 @@ img {
     transition: .6s all;
 }
 
-.boxx{
+.box{
   padding: 20px;
 }
 
@@ -59,8 +59,9 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    border: 10px solid #333;
+    border: 23.5px solid #333;
 }
+
 
 footer nav a {
     display: inline-block;
@@ -68,7 +69,7 @@ footer nav a {
 }
 
 footer p {
-    margin-top: 3.25em;
+    margin-top: 1.25em;
     font-size: 0.8em;
 }
 
@@ -82,40 +83,65 @@ header img{
     padding-right: 0.9%;
 }
 
-.dark-theme {
+body {
     background-color: rgb(53, 53, 53);
 }
 
-.dark-theme header h2 {
+body header h1 {
     color: white;
 }
 
-.dark-theme .box {
+body .box {
     background-color: #0000006f;
     color: #fff;
 }
 
-.dark-theme .mdl-button{
+body .mdl-button{
     background-color: #0000006f;
     color: #fff;
 }
 
-.dark-theme .box:hover {
+body .box:hover {
     box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.1);
 }
 
-.dark-theme #theme {
-    background-color: #333;
-    border: 1px solid gray;
+body #theme {
+    background-color: rgb(53, 53, 53);
+    border: 1px solid rgb(53, 53, 53);
     color: white;
 }
 
 #theme {
-    border: 1px solid black;
-    cursor: pointer;
-    border-radius: 30px;
-    padding: 1% 2%;
-    font-size: 1em;
+    border: 1px solid none;
+    background-color: none;
+}
+
+.light-theme {
+    background-color: #fff;
+}
+
+.light-theme header h1 {
+    color: #000;
+}
+
+.light-theme .box {
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+.light-theme .mdl-button{
+    background-color: #fff;
+    color: #000;
+}
+
+.light-theme .box:hover {
+    box-shadow: 10px 10px 10px #0000006f;
+}
+
+.light-theme #theme {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #000;
 }
 
 
@@ -146,12 +172,20 @@ nav a {
     width: 100%;
 }
 
-  .buttons-container {
+.buttons-container {
     display: flex;
-    
-  }
-  button {
+}
+.buttons {
+    color: #fff;
     padding: 10px 20px;
     font-size: 16px;
-    margin-right: 10px; /* Добавляем горизонтальный отступ справа */
-  }
+    margin-right: 10px;
+    border: 1px solid #5483bb;
+    background-color: #5483bb;
+    border-radius: 30px;
+}
+
+.buttons:hover {
+    color: #fff;
+    transform: scale(1.03);
+}
