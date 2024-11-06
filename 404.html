@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found</title>
+</head>
+<body>
+    <h1>Page Not Found</h1>
+    <p>You will be redirected to the homepage...</p>
+
+    <script>
+        if (window.location.pathname.startsWith("/worlds/")) {
+            window.location.href = "https://mcservpro.github.io/";
+        } else {
+            document.body.innerHTML += "<p>The page you're looking for doesn't exist.</p>";
+        }
+    </script>
+</body>
+</html>
