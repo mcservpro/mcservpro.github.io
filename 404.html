@@ -3,17 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Not Found</title>
+    <title id="title-text"></title>
 </head>
 <body>
-    <h1>Page Not Found</h1>
-    <p>You will be redirected to the homepage...</p>
-
+    <h1 id="title"></h1>
+    <p id="message"></p>
+    <p id="download-link"></p>
     <script>
-        if (window.location.pathname.startsWith("/worlds/")) {
-            window.location.href = "https://mcservpro.github.io/";
+        var path = window.location.pathname;
+        var userLang = navigator.language || navigator.userLanguage;
+		function setText(lang) {
+            if (lang.startsWith("ru")) {
+                document.getElementById("title-text").innerHTML = 'ОТКАЗАНО В ДОСТУПЕ!';
+                document.getElementById("title").innerHTML = 'ОТКАЗАНО В ДОСТУПЕ!';
+                document.getElementById("message").innerHTML = 'Просмотр данной страницы возможен только через приложение <a href="https://vk.com/mcservpro" style="color: blue; text-decoration: underline;">MCServPro</a>!';
+                document.getElementById("download-link").innerHTML = 'Скачать приложение можно тут: <a href="https://mcservpro.github.io/" style="color: blue; text-decoration: underline;">Открыть сайт</a>.';
+            } else {
+                document.getElementById("title-text").innerHTML = 'ACCESS IS DENIED!';
+                document.getElementById("title").innerHTML = 'ACCESS IS DENIED!';
+                document.getElementById("message").innerHTML = 'This page can only be viewed through the <a href="https://vk.com/mcservpro" style="color: blue; text-decoration: underline;">MCServPro</a> app!';
+                document.getElementById("download-link").innerHTML = 'You can download the app here: <a href="https://mcservpro.github.io/" style="color: blue; text-decoration: underline;">Open site</a>.';
+            }
+        }
+		if (path.startsWith("/worlds/") || path.startsWith("/plugins/")) {
+            setText(userLang);
         } else {
-            document.body.innerHTML += "<p>The page you're looking for doesn't exist.</p>";
+            window.location.href = "https://mcservpro.github.io/";
         }
     </script>
 </body>
