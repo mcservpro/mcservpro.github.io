@@ -3,62 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon", type="image/png", href="img/icon.png">
-  <script src="js/ic_social.js" crossorigin="anonymous"></script>
+  
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="icon" type="image/png" href="img/icon.png">
 
   <title>𝗠𝗖𝗦𝗲𝗿𝘃𝗣𝗿𝗼 | Карманный сервер</title>
 </head>
 
 <body>
-  <header>
-    <br>
-    <h1 class="title">𝗠𝗖𝗦𝗲𝗿𝘃𝗣𝗿𝗼</h1>
-    <button id="theme"><span class="material-symbols-outlined">light_mode</span></button>
+  <header class="site-header">
+    <div class="logo">
+      <h1 class="site-title">𝗠𝗖𝗦𝗲𝗿𝘃𝗣𝗿𝗼</h1>
+    </div>
+    <button id="theme-toggle" aria-label="Переключить тему" class="theme-toggle-btn">
+      <span class="material-symbols-outlined theme-icon">light_mode</span>
+    </button>
   </header>
   
-  <main>        
-    <div class="box">
-      <h3 class="title">Карманный сервер v0.0.2</h3>
-      <div>
-        <img src="img/post.png" style="width: 278px;">
-      </dev>
-      <p>Яндекс диск</p>
+  <main class="content-wrapper">        
+    <div class="box download-box">
+      <h3 class="box-title">Карманный сервер v0.0.2</h3>
+      <div class="post-image-container">
+        <img src="img/post.png" alt="Изображение сервера MCServPro" class="post-image">
+      </div>
       
-      <div class="buttons-container">
-        <a href="https://ify.ac/1FTN" class="buttons">
-          
-          <text>Скачать 64bit</text>
+      <p class="disk-title">Яндекс диск</p>
+      <div class="buttons-group">
+        <a href="https://ify.ac/1FTN" class="button primary-button">
+          Скачать 64bit
         </a>
-        <a href="https://ify.ac/1FTO" class="buttons">
-          <text>Скачать 32bit</text>
+        <a href="https://ify.ac/1FTO" class="button primary-button">
+          Скачать 32bit
         </a>
       </div>
       
-      <p>Гугл диск</p>
-      <div class="buttons-container">           
-        <a href="https://ify.ac/1FTF" class="buttons">
-          <text>Скачать 64bit</text>
+      <p class="disk-title">Гугл диск</p>
+      <div class="buttons-group">           
+        <a href="https://ify.ac/1FTF" class="button primary-button">
+          Скачать 64bit
         </a>
-        <a href="https://ify.ac/1FTI" class="buttons">
-          <text>Скачать 32bit</text>
+        <a href="https://ify.ac/1FTI" class="button primary-button">
+          Скачать 32bit
         </a>
-        
       </div>
-      <p style="color: orange;">* Примечание, не используйте браузер Google для скачивания приложения</p>
+      
+      <p class="note">
+          * Примечание, не используйте браузер Google для скачивания приложения
+      </p>
     </div>
   </main>
   
-  <footer>
-    <h3 class="title">Социальные сети</h3>
-    <nav>
-      <a href="https://discord.gg/secUYz52kr"><i class="fa-brands fa-discord"></i></a>
-      <a href="https://vk.com/winners_of_games"><i class="fa-brands fa-vk"></i></a>
+  <footer class="site-footer">
+    <h3 class="footer-title">Социальные сети</h3>
+    <nav class="social-nav">
+      <a href="https://discord.gg/secUYz52kr" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+      <a href="https://vk.com/winners_of_games" aria-label="ВКонтакте"><i class="fa-brands fa-vk"></i></a>
     </nav>
-    <p>© MCServPro 2018 - 2024</p>
+    <p class="copyright">© MCServPro 2018 - 2025</p>
   </footer>
 
-<script src="index.js"></script>
+  <script src="js/ic_social.js" crossorigin="anonymous"></script> 
+  
+  <script src="index.js"></script>
 </body>
 </html>
